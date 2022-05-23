@@ -198,12 +198,26 @@ h3 {
 }
 
 .recents {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   height: 20em;
   width: auto;
   border-radius: 1em;
   margin: 4em auto;
   opacity: 0.5;
   transition: transform 1s, opacity 1s;
+}
+
+.recent-projects p {
+  font-size: 2em;
+  text-align: center;
+  color: whitesmoke;
+}
+
+.recent-projects a {
+  text-decoration: none;
 }
 
 .recent-projects img:hover {
