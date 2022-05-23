@@ -266,12 +266,16 @@ svg:hover {
 @media screen and (max-width: 375px) {
 
 h1 {
-  font-size: 5em;
+  font-size: 4em;
 }
 
 .banner {
   background-size: 280%;
   height: 12em;
+}
+
+.recent-projects {
+  margin: -3em auto;
 }
 
 .skills {
@@ -281,8 +285,10 @@ h1 {
 
 #lab_social_icon_footer a {
   top: -2em;
-  display: inline;
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-self: center;
 }
 
 }
