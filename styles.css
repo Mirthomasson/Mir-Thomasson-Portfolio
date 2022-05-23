@@ -17,6 +17,7 @@ body {
 }
 
 
+
 /* ---------- Banner ---------- */
 
 .banner {
@@ -35,16 +36,16 @@ body {
 /* ---------- Nav Hamburger ---------- */
 
 .dropbtn {
-    background-color: #011814;
-    color: white;
-    padding: 4px;
+    background-color: rgba(245, 245, 245, 0.76);
+    color: black;
+    padding: 2px;
     font-size: 26px;
     text-align: center;
     border: none;
-    border-radius: .5em;
+    border-radius: .2em;
     cursor: pointer;
     width: 2.5em;
-    margin: 2em;
+    margin: 4em;
     transition: background-color 1s;
   }
   
@@ -102,6 +103,33 @@ h1 {
     font-size: 10em;
 }
 
+.typewriter {
+  margin: 5em;
+  display: flex;
+}
+
+.typewriter h1 {
+  overflow: hidden; 
+  border-right: .1em solid orange;
+  white-space: nowrap;
+  margin: 0 auto; 
+  letter-spacing: .15em;
+  animation: 
+    typing 4s steps(30, end),
+    blink-caret .6s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
+}
+
+
 h2 {
     text-align: center;
     font-size: 6em;
@@ -127,7 +155,7 @@ h3 {
   align-items: center;
   justify-content: center;
   margin-top: -5em;
-  gap: 10em;
+  gap: 6em;
 }
 
 .recents {
@@ -182,10 +210,10 @@ svg:hover {
 }
 
 #lab_social_icon_footer a {
-  top: -4em;
+  top: -5.5em;
   position: relative;
   color: lightyellow;
-  padding: 5px;
+  padding: 20px;
 }
 
 #lab_social_icon_footer .social:hover {
@@ -195,7 +223,7 @@ svg:hover {
 }
 
 #lab_social_icon_footer .social {
-  -webkit-transform: scale(0.8);
+  -webkit-transform: scale(1.5);
   /* Browser Variations: */
   
   -moz-transform: scale(0.8);
@@ -227,7 +255,7 @@ svg:hover {
 
 /* ----------Mobile View---------- */
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1400px) {
  
 
     h1 {
