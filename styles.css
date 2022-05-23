@@ -280,6 +280,8 @@ h1 {
 
 #lab_social_icon_footer a {
   top: -2em;
+  display: inline;
+  align-items: center;
 }
 
 }
