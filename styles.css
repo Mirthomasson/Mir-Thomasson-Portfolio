@@ -150,14 +150,16 @@ h3 {
   align-items: center;
   justify-content: center;
   margin-bottom: 20em;
+  background-image: url("./images/skills-background2.jpeg");
+  min-height: 500px;
+  background-attachment: fixed;
+  background-size: 40%;
 }
 
 svg {
   height: auto;
   width: 15em;
   margin: 4em 6em;
-  background-color: #47C1C3;
-  padding: 1.5em;
   border-radius: .5em;
   transition: transform 250ms;
 }
