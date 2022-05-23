@@ -279,7 +279,7 @@ h1 {
 }
 
 .skills {
-  background-attachment: scroll;
+  background-size: 100%;
 }
 
 #lab_social_icon_footer a {
