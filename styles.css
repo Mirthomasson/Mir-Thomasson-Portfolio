@@ -100,72 +100,7 @@ body {
 h1 {
     text-align: center;
     font-weight: 700;
-    font-size: 10em;
-}
-
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  margin-top: 4%;
-  width: 100%;
-  height: 100%;
-}
-
-.line__1,
-.line__2 {
-  white-space: nowrap; 
-  overflow: hidden;
-  margin: 0 auto;
-}
-
-.line__1 {
-  border-right: 3px solid transparent;
-  animation: animated-text__1 5s steps(30, end) 1s 1 normal both,
-    animated-cursor__1 800ms steps(30, end) 4;
-}
-
-.line__2 {
-  border-right: 3px solid transparent;
-  animation: animated-text__2 4s steps(30, end) 1s 1 normal both,
-    animated-cursor__2 800ms steps(30, end) infinite;
-  -webkit-animation-delay: 7s;
-  animation-delay: 3.5s;
-}
-
-@keyframes animated-cursor__1 {
-  from {
-    border-right-color: transparent;
-  }
-  to {
-    border-right-color: rgba(255, 255, 255, 0.8);
-  }
-}
-
-@keyframes animated-cursor__2 {
-  from {
-    border-right-color: transparent;
-  }
-  to {
-    border-right-color: rgba(255, 255, 255, 0.8);
-  }
-}
-
-@keyframes animated-text__1 {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-
-@keyframes animated-text__2 {
-  from {
-    width: 0;
-  }
-  to {
-    width: 40%;
-  }
+    font-size: 12em;
 }
 
 
@@ -312,7 +247,7 @@ svg:hover {
  
 
     h1 {
-      font-size: 5em;
+      font-size: 10em;
     }
 
     h2 {
@@ -346,7 +281,7 @@ svg:hover {
 
 @media only screen and (max-width: 800px) {
   h1 {
-    font-size: 2.4em;
+    font-size: 8em;
   }
   
   .banner {
@@ -372,7 +307,7 @@ svg:hover {
 @media screen and (max-width: 375px) {
 
   h1 {
-    font-size: 2em;
+    font-size: 6em;
   }
   
   .banner {
