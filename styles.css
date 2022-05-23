@@ -270,6 +270,10 @@ svg:hover {
   height: 12em;
 }
 
+.skills {
+  background-size: 80%;
+}
+
 #lab_social_icon_footer a {
   top: -2em;
   margin: 2em;
