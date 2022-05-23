@@ -292,7 +292,7 @@ h1 {
 }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   .banner {
     background-size: 270%;
   }
