@@ -215,11 +215,11 @@ svg:hover {
 }
 
 #lab_social_icon_footer #social-li:hover {
-  color: blue;
+  color: rgb(66, 66, 230);
 }
 
 #lab_social_icon_footer #social-em:hover {
-  color: #f39c12;
+  color: #46b86e;
 }
 
 
