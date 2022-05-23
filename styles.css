@@ -103,30 +103,69 @@ h1 {
     font-size: 10em;
 }
 
-.typewriter {
-  margin: 5em;
+.wrapper {
   display: flex;
+  flex-direction: column;
+  margin-top: 4%;
+  width: 100%;
+  height: 100%;
 }
 
-.typewriter h1 {
-  overflow: hidden; 
-  border-right: .1em solid orange;
-  white-space: nowrap;
-  margin: 0 auto; 
-  letter-spacing: .15em;
-  animation: 
-    typing 4s steps(30, end),
-    blink-caret .6s step-end infinite;
+.line__1,
+.line__2 {
+  white-space: nowrap; 
+  overflow: hidden;
+  margin: 0 auto;
 }
 
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
+.line__1 {
+  border-right: 3px solid transparent;
+  animation: animated-text__1 5s steps(30, end) 1s 1 normal both,
+    animated-cursor__1 800ms steps(30, end) 4;
 }
 
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: orange }
+.line__2 {
+  border-right: 3px solid transparent;
+  animation: animated-text__2 4s steps(30, end) 1s 1 normal both,
+    animated-cursor__2 800ms steps(30, end) infinite;
+  -webkit-animation-delay: 7s;
+  animation-delay: 3.5s;
+}
+
+@keyframes animated-cursor__1 {
+  from {
+    border-right-color: transparent;
+  }
+  to {
+    border-right-color: rgba(255, 255, 255, 0.8);
+  }
+}
+
+@keyframes animated-cursor__2 {
+  from {
+    border-right-color: transparent;
+  }
+  to {
+    border-right-color: rgba(255, 255, 255, 0.8);
+  }
+}
+
+@keyframes animated-text__1 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes animated-text__2 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 40%;
+  }
 }
 
 
@@ -259,7 +298,7 @@ svg:hover {
  
 
     h1 {
-      font-size: 6em;
+      font-size: 5em;
     }
 
     h2 {
@@ -291,37 +330,11 @@ svg:hover {
     }
 }
 
-@media screen and (max-width: 375px) {
-
-h1 {
-  font-size: 4em;
-}
-
-.banner {
-  background-size: 280%;
-  height: 12em;
-  background-attachment: scroll;
-}
-
-.recent-projects {
-  margin: -3em auto;
-}
-
-.skills {
-  background-size: 100%;
-  background-attachment: scroll;
-}
-
-#lab_social_icon_footer a {
-  top: -2em;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-self: center;
-}
-}
-
 @media only screen and (max-width: 800px) {
+  h1 {
+    font-size: 2.4em;
+  }
+  
   .banner {
     background-size: 280%;
     height: 14em;
@@ -341,3 +354,33 @@ h1 {
     justify-self: center;
   }
 }
+
+@media screen and (max-width: 375px) {
+
+  h1 {
+    font-size: 2em;
+  }
+  
+  .banner {
+    background-size: 280%;
+    height: 12em;
+    background-attachment: scroll;
+  }
+  
+  .recent-projects {
+    margin: -3em auto;
+  }
+  
+  .skills {
+    background-size: 100%;
+    background-attachment: scroll;
+  }
+  
+  #lab_social_icon_footer a {
+    top: -2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+  }
+  }
