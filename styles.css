@@ -280,6 +280,7 @@ h1 {
 
 .skills {
   background-size: 100%;
+  position: relative;
 }
 
 #lab_social_icon_footer a {
