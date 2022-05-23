@@ -290,5 +290,19 @@ h1 {
   align-items: center;
   justify-self: center;
 }
+}
 
+@media only screen and (max-width: 600px) {
+  .banner {
+    background-size: 270%;
+  }
+
+  .skills {
+    background-size: 100%;
+    background-attachment: scroll;
+  }
+
+  #lab_social_icon_footer a {
+    top: -1em;
+  }
 }
