@@ -127,20 +127,22 @@ h3 {
   align-items: center;
   justify-content: center;
   margin-top: -5em;
-  gap: 1em;
+  gap: 10em;
 }
 
 .recents {
-  height: 15em;
-  width: 100%;
+  height: 20em;
+  width: auto;
   border-radius: 1em;
-  margin: 2.5em;
-  transition: transform 1s;
+  margin: 4em auto;
+  opacity: 0.5;
+  transition: transform 1s, opacity 1s;
 }
 
 .recent-projects img:hover {
   transform: scale(1.3);
-  transition: transform 1s;
+  opacity: 1;
+  transition: transform 1s, opacity 1s;
   cursor: pointer;
 }
 
@@ -227,6 +229,10 @@ svg:hover {
 
 @media screen and (max-width: 1200px) {
     h1 {
-      font-size: 5em;
+      font-size: 6em;
+    }
+
+    h2 {
+      font-size: 4em;
     }
 }
