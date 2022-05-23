@@ -265,6 +265,10 @@ svg:hover {
 
 @media screen and (max-width: 375px) {
 
+h1 {
+  padding: 0 auto;
+}
+
 .banner {
   background-size: 280%;
   height: 12em;
@@ -276,7 +280,6 @@ svg:hover {
 
 #lab_social_icon_footer a {
   top: -2em;
-  margin: 2em;
 }
 
 }
