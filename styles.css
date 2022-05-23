@@ -228,6 +228,8 @@ svg:hover {
 /* ----------Mobile View---------- */
 
 @media screen and (max-width: 1200px) {
+ 
+
     h1 {
       font-size: 6em;
     }
@@ -253,5 +255,24 @@ svg:hover {
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      padding: 4em;
     }
+
+    svg {
+      margin: 0;
+    }
+}
+
+@media screen and (max-width: 375px) {
+
+.banner {
+  background-size: 280%;
+  height: 12em;
+}
+
+#lab_social_icon_footer a {
+  top: -2em;
+  margin: 2em;
+}
+
 }
