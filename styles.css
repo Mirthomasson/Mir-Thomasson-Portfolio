@@ -272,6 +272,7 @@ h1 {
 .banner {
   background-size: 280%;
   height: 12em;
+  background-attachment: scroll;
 }
 
 .recent-projects {
@@ -296,6 +297,7 @@ h1 {
   .banner {
     background-size: 280%;
     height: 14em;
+    background-attachment: scroll;
   }
 
   .skills {
