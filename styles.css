@@ -278,11 +278,6 @@ h1 {
   margin: -3em auto;
 }
 
-.skills {
-  background-size: 80%;
-  background-image: url("./images/skills-background2.jpeg");
-}
-
 #lab_social_icon_footer a {
   top: -2em;
   display: flex;
