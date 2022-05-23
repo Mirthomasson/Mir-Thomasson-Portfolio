@@ -308,6 +308,10 @@ svg:hover {
 
 @media screen and (max-width: 375px) {
 
+  body {
+    overflow: hidden;
+  }
+
   h1 {
     font-size: 6em;
     text-align: center;
