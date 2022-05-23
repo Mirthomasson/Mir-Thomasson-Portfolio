@@ -278,6 +278,10 @@ h1 {
   margin: -3em auto;
 }
 
+.skills {
+  background-size: 100%;
+}
+
 #lab_social_icon_footer a {
   top: -2em;
   display: flex;
@@ -285,4 +289,5 @@ h1 {
   align-items: center;
   justify-self: center;
 }
+
 }
