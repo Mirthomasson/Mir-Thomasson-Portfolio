@@ -294,7 +294,8 @@ h1 {
 
 @media only screen and (max-width: 800px) {
   .banner {
-    background-size: 270%;
+    background-size: 280%;
+    height: 14em;
   }
 
   .skills {
@@ -304,5 +305,9 @@ h1 {
 
   #lab_social_icon_footer a {
     top: -1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
   }
 }
