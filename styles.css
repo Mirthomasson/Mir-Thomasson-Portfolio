@@ -195,8 +195,6 @@ svg:hover {
 
 #social_icon_footer .social {
   -webkit-transform: scale(1.2);
-  /* Browser Variations: */
-  
   -moz-transform: scale(0.8);
   -o-transform: scale(0.8);
   -webkit-transition-duration: 0.5s;
@@ -300,6 +298,14 @@ svg:hover {
     height: 40em;
   }
 
+  footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 375px) {
   footer {
     display: flex;
     align-items: center;
