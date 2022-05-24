@@ -102,11 +102,12 @@ body {
 h1 {
     text-align: center;
     font-weight: 700;
-    font-size: 8em;
+    font-size: 10em;
     position: absolute;
     top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
+    display: flex;
 }
 
 
@@ -169,17 +170,16 @@ svg:hover {
 
 /* ----------Footer---------- */
 
-#lab_social_icon_footer {
+#social_icon_footer {
   text-align: center;
   padding: 140px;
   background-image: url("./images/footer-1.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: relative;
-  margin-right: -5em;
 }
 
-#lab_social_icon_footer a {
+#social_icon_footer a {
   float: right;
   position: relative;
   color: lightyellow;
@@ -187,13 +187,13 @@ svg:hover {
   bottom: -2em;
 }
 
-#lab_social_icon_footer .social:hover {
+#social_icon_footer .social:hover {
   -webkit-transform: scale(1.5);
   -moz-transform: scale(1.5);
   -o-transform: scale(1.5);
 }
 
-#lab_social_icon_footer .social {
+#social_icon_footer .social {
   -webkit-transform: scale(1.2);
   /* Browser Variations: */
   
@@ -227,12 +227,8 @@ svg:hover {
 /* ----------Mobile View---------- */
 
 @media screen and (max-width: 1400px) {
-  body {
-    overflow-x: hidden;
-  }
-
     h1 {
-      font-size: 10em;
+      font-size: 8em;
       text-align: center;
     }
 
@@ -240,9 +236,6 @@ svg:hover {
       font-size: 4em;
     }
 
-    h3 {
-      font-size: 4em;
-    }
 
     .recent-projects {
       display: flex;
@@ -265,67 +258,41 @@ svg:hover {
     }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 965px) {
   body {
     overflow-x: hidden;
   }
  
   h1 {
-    font-size: 8em;
-    text-align: center;
+    font-size: 5em;
+    top: 4em;
   }
-  
+
   .banner {
-    background-size: 280%;
-    height: 14em;
-    background-attachment: scroll;
-  }
-
-  .skills {
-    background-size: 100%;
-    background-attachment: scroll;
-  }
-
-  #lab_social_icon_footer a {
-    top: -1em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-self: center;
+    height: 50em;
   }
 }
 
-@media screen and (max-width: 375px) {
-
-  body {
-    overflow-x: hidden;
+@media screen and (max-width: 645px) {
+   h1 {
+    font-size: 4em;
+    top: 5em;
   }
+}
+
+@media screen and (max-width: 495px) {
 
   h1 {
-    font-size: 6em;
-    text-align: center;
+    font-size: 3em;
   }
-  
+
   .banner {
-    background-size: 280%;
-    height: 12em;
-    background-attachment: scroll;
+    height: 40em;
   }
-  
-  .recent-projects {
-    margin: -3em auto;
-  }
-  
-  .skills {
-    background-size: 100%;
-    background-attachment: scroll;
-  }
-  
-  #lab_social_icon_footer a {
-    top: -2em;
+
+  footer {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-self: center;
+    justify-content: center;
   }
-  }
+}
