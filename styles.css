@@ -257,6 +257,11 @@ svg:hover {
   height: 20em;
 }
 
+.contact-photo:hover {
+  opacity: 1;
+}
+
+
 .contact-title {
   display: flex;
   align-items: center;
@@ -315,6 +320,9 @@ textarea {
 [type="submit"]:hover { 
   background:#CC4949; 
 }
+
+
+/* ----------About Me---------- */
 
 
 
