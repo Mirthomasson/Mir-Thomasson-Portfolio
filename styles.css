@@ -281,8 +281,18 @@ svg:hover {
 }
 
 @media screen and (max-width: 495px) {
+  .dropbtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
   h1 {
+    font-size: 2.5em;
+    top: 6em;
+  }
+
+  h2 {
     font-size: 3em;
   }
 
