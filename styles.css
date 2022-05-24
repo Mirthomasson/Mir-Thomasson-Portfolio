@@ -45,7 +45,7 @@ body {
     border-radius: .2em;
     cursor: pointer;
     width: 3em;
-    margin: 2em;
+    margin: 3em;
     opacity: 0.7;
     transition: opacity 1s;
     position: relative;
@@ -62,12 +62,12 @@ body {
     opacity: 0;
     transition: visibility 1s, opacity 0.5s;
     position: absolute;
-    right: 1.75em;
+    right: 2.5em;
     background-color: #f9f9f9;
     min-width: 80px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-    margin-top: -2em;
+    margin-top: -3.5em;
     text-align: center;
     border-radius: .5em;
   }
@@ -77,7 +77,7 @@ body {
     padding: 10px 10px;
     text-decoration: none;
     display: block;
-    font-size: 1em;
+    font-size: 1.25em;
   }
   
   .dropdown-content a:hover {
@@ -117,10 +117,21 @@ h2 {
     margin-top: 2em;
 }
 
-.click-tip {
-  text-align: center;
-  font-size: 2em;
-  margin-bottom: 4em;
+.pulsate {
+  -webkit-animation: pulsate 1s ease-out;
+  -webkit-animation-iteration-count: infinite; 
+  opacity: 0.3;
+}
+@-webkit-keyframes pulsate {
+  0% { 
+      opacity: 0.5;
+  }
+  50% { 
+      opacity: 1.0;
+  }
+  100% { 
+      opacity: 0.5;
+  }
 }
 
 /* ----------Featured Projects & Skills---------- */
@@ -128,7 +139,7 @@ h2 {
 .recent-projects {
   display: flex;
   align-items: center;
-  justify-content: stretch;
+  justify-content: center;
   flex-direction: column;
 }
 
@@ -150,32 +161,35 @@ h2 {
 
 .skills {
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin: 5em;
+  margin: 8em auto;
 }
 
-.skills p {
+.text {
   text-align: center;
-  position: relative;
-  right: 14.75em;
-  top: 10em;
+  margin-top: -2em;
+  font-size: 1.5em;
 }
 
-
+.skillbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 svg {
-  height: auto;
-  width: 15em;
-  margin: 4em 6em;
-  border-radius: .5em;
+  height: 20em;
+  width: 20em;
+  padding: 4em;
   transition: transform 250ms;
 }
 
 svg:hover {
   transform: translateY(-10px);
 }
+
+
 
 /* ----------Footer---------- */
 
@@ -214,20 +228,20 @@ svg:hover {
     Multicoloured Hover Variations
 */
 
-#lab_social_icon_footer #social-gh:hover {
-  color: slategray;
+#social_icon_footer #social-gh:hover {
+  color: #000000;
 }
 
-#lab_social_icon_footer #social-tw:hover {
+#social_icon_footer #social-tw:hover {
   color: #4099FF;
 }
 
-#lab_social_icon_footer #social-li:hover {
-  color: rgb(66, 66, 230);
+#social_icon_footer #social-li:hover {
+  color: #007bb6;
 }
 
-#lab_social_icon_footer #social-em:hover {
-  color: #46b86e;
+#social_icon_footer #social-em:hover {
+  color: #d34836;
 }
 
 
@@ -291,6 +305,10 @@ svg:hover {
     top: 5em;
   }
 
+  .recent-projects a {
+    padding: 0 1em;
+  }
+
   .contact-form {
     font-size: 4em;
     text-align: center;
@@ -317,6 +335,10 @@ svg:hover {
     height: 40em;
   }
 
+  .recent-projects a {
+    padding: 0 1em;
+  }
+
   footer {
     display: flex;
     align-items: center;
@@ -331,6 +353,10 @@ svg:hover {
 }
 
 @media screen and (max-width: 375px) {
+  .recent-projects a {
+    padding: 0 1em;
+  }
+
   footer {
     display: flex;
     align-items: center;
