@@ -269,12 +269,22 @@ svg:hover {
   .banner {
     height: 50em;
   }
+
+  .contact-form {
+    font-size: 5em;
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 645px) {
    h1 {
     font-size: 4em;
     top: 5em;
+  }
+
+  .contact-form {
+    font-size: 4em;
+    text-align: center;
   }
 }
 
@@ -303,6 +313,12 @@ svg:hover {
     align-items: center;
     justify-content: center;
   }
+  
+   .contact-form {
+    font-size: 3em;
+    text-align: center;
+  }
+  
 }
 
 @media screen and (max-width: 375px) {
@@ -311,4 +327,61 @@ svg:hover {
     align-items: center;
     justify-content: center;
   }
+  
+  .contact-form {
+    font-size: 2em;
+    text-align: center;
+  }
 }
+
+
+/* ----------Contact Form---------- */
+
+form {  
+  margin: 0 3em; 
+  padding: 15em 0;
+}
+
+.contact-form {
+  font-size: 5em;
+  text-align: center;
+  padding-bottom: 2em;
+}
+
+.feedback-input {
+  color:white;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border:2px solid #CC6666;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+}
+
+.feedback-input:focus { border:2px solid #CC4949; }
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize:vertical;
+}
+
+[type="submit"] {
+  width: 100%;
+  background:#CC6666;
+  border-radius:5px;
+  border:0;
+  cursor:pointer;
+  color:white;
+  font-size:24px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  margin-top:-4px;
+}
+[type="submit"]:hover { background:#CC4949; }

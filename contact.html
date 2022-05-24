@@ -5,15 +5,15 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="styles.css" />
-		<link
-			rel="icon"
-			type="image/x-icon"
-			href="./images/portfolio-favicon.png"
-		/>
+		<link rel="icon" type="image/x-icon" href="./images/mountain-logo.png" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
-			href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap"
+			href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"
 			rel="stylesheet"
 		/>
 		<title>Miranda Thomasson</title>
@@ -22,7 +22,9 @@
 		<main>
 			<nav>
 				<div class="dropdown" style="float: right">
-					<button class="dropbtn">&#8801;</button>
+					<button class="dropbtn">
+						<img src="./images/mountain-logo.png" alt="mountain logo" />
+					</button>
 					<div class="dropdown-content">
 						<a href="index.html">Home</a>
 						<a href="about.html">About</a>
@@ -31,8 +33,13 @@
 					</div>
 				</div>
 			</nav>
-            <div class="banner"></div>
-			<h1>Welcome to my Portfolio!</h1>
+			<form>     
+				<div class="contact-form">Reach out to me if you like my work, or want to collaborate!</div> 
+				<input name="name" type="text" class="feedback-input" placeholder="Name" />   
+				<input name="email" type="text" class="feedback-input" placeholder="Email" />
+				<textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
+				<input type="submit" value="SUBMIT"/>
+			  </form>
 		</main>
 	</body>
 </html>
