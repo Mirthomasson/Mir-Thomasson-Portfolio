@@ -22,16 +22,16 @@ body {
 /* ---------- Banner ---------- */
 
 .banner {
-    background-image: url(./images/blue-ridge-banner.jpeg);
+    background: linear-gradient(to bottom, rgba(47, 79, 79, 0) 40%,
+    rgb(47, 79, 79)), url("./images/blue-ridge-banner.jpeg");
     background-size: cover;
     background-position: bottom;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     height: 60em;
     width: auto;
     position: relative;
 }
-
 
 
 
@@ -155,6 +155,15 @@ h2 {
   justify-content: center;
   margin: 5em;
 }
+
+.skills p {
+  text-align: center;
+  position: relative;
+  right: 14.75em;
+  top: 10em;
+}
+
+
 
 svg {
   height: auto;
