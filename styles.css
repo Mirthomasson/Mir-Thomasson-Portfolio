@@ -324,7 +324,26 @@ textarea {
 
 /* ----------About Me---------- */
 
+.gallery {
+  max-width: 1300px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
 
+.gallery img {
+  width: 20em;
+  border-radius: 6px;
+  opacity: 0.5;
+  transition: 1s ease;
+}
+
+.gallery img:hover {
+  opacity: 1;
+  transition: 1s ease;
+}
 
 
 /* ----------Mobile View---------- */
@@ -378,8 +397,8 @@ textarea {
 
 @media screen and (max-width: 645px) {
    h1 {
-    font-size: 4em;
-    top: 5em;
+    font-size: 2em;
+    top: 8em;
   }
 
   .recent-projects a {
@@ -399,8 +418,8 @@ textarea {
   }
 
   h1 {
-    font-size: 2.5em;
-    top: 6em;
+    font-size: 2em;
+    top: 9em;
   }
 
   h2 {
@@ -427,6 +446,12 @@ textarea {
 }
 
 @media screen and (max-width: 375px) {
+  
+  h1 {
+    font-size: 2em;
+    top: 10em;
+  }
+  
   .recent-projects a {
     padding: 0 1em;
   }
