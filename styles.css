@@ -38,23 +38,22 @@ body {
 /* ---------- Nav Hamburger ---------- */
 
 .dropbtn {
-    background-color: whitesmoke;
+    background-color: transparent;
     border: none;
     font-size: 25px;
     text-align: center;
-    border-radius: .2em;
     cursor: pointer;
-    width: 3em;
-    margin: 3em;
+    float: right;
     opacity: 0.8;
     transition: opacity 1s;
-    position: relative;
-    z-index: 1;
+    margin: .1em 1.75em;
   }
   
   .dropdown {
-    position: relative;
-    display: inline-block;
+    background-color: rgba(255, 245, 238, 0.911);
+    position: fixed;
+    z-index: 1;
+    width: 100%;
   }
   
   .dropdown-content {
@@ -62,12 +61,12 @@ body {
     opacity: 0;
     transition: visibility 1s, opacity 0.5s;
     position: absolute;
-    right: 3.25em;
-    background-color: #f9f9f9;
+    top: 4.5em;
+    right: 16px;
+    background-color: seashell;
     min-width: 80px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-    margin-top: -3.5em;
     text-align: center;
     border-radius: .5em;
   }
@@ -96,6 +95,10 @@ body {
       transition: opacity 1s;
     }
 
+    dropbtn:hover {
+      background-color: silver;
+    }
+
 
 /* ----------Titles---------- */
 
@@ -113,7 +116,7 @@ h1 {
 
 h2 {
     text-align: center;
-    font-size: 4em;
+    font-size: 5em;
     margin-top: 2em;
     color: turquoise;
 }
@@ -145,7 +148,7 @@ h2 {
 }
 
 .recent-projects a {
-  font-size: 1.5em;
+  font-size: 2em;
   text-align: center;
   color: whitesmoke;
   text-decoration: none;
@@ -196,7 +199,7 @@ svg:hover {
 
 #social_icon_footer {
   text-align: center;
-  padding: 130px 110px;
+  padding: 130px 50px;
   background-image: url("./images/footer-1.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -208,7 +211,7 @@ svg:hover {
   position: relative;
   color: lightyellow;
   padding: 12px;
-  bottom: -2em;
+  bottom: -3em;
 }
 
 #social_icon_footer .social:hover {
@@ -325,7 +328,7 @@ textarea {
 /* ----------About Me---------- */
 
 .gallery {
-  max-width: 1300px;
+  max-width: 1000px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -334,7 +337,7 @@ textarea {
 }
 
 .gallery img {
-  width: 20em;
+  width: 15em;
   border-radius: 6px;
   opacity: 0.5;
   transition: 1s ease;
@@ -445,8 +448,7 @@ textarea {
   }
 }
 
-@media screen and (max-width: 375px) {
-  
+@media screen and (max-width: 375px) { 
   h1 {
     font-size: 2em;
     top: 10em;
