@@ -350,21 +350,8 @@ textarea {
 
 @media screen and (max-width: 1400px) {
     h1 {
-      font-size: 8em;
-      text-align: center;
-    }
-
-    h2 {
       font-size: 4em;
-    }
-
-
-    .recent-projects {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: .5em;
+      top: 8em;
     }
 
     .skills {
@@ -382,17 +369,13 @@ textarea {
 }
 
 @media only screen and (max-width: 965px) {
-  body {
-    overflow-x: hidden;
-  }
- 
   h1 {
-    font-size: 5em;
-    top: 4em;
+    font-size: 4em;
+    top: 8em;
   }
 
-  .banner {
-    height: 50em;
+  h2 {
+    font-size: 3.5em;
   }
 
   .contact-title {
@@ -403,8 +386,12 @@ textarea {
 
 @media screen and (max-width: 645px) {
    h1 {
-    font-size: 2em;
-    top: 8em;
+    font-size: 3em;
+    top: 9em;
+  }
+
+  h2 {
+    font-size: 3em;
   }
 
   .recent-projects a {
@@ -421,11 +408,11 @@ textarea {
 
   h1 {
     font-size: 2em;
-    top: 9em;
+    top: 10em;
   }
 
   h2 {
-    font-size: 3em;
+    font-size: 2em;
   }
 
   .banner {
@@ -434,12 +421,6 @@ textarea {
 
   .recent-projects a {
     padding: 0 1em;
-  }
-
-  footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
 
   .contact-title {
@@ -453,23 +434,19 @@ textarea {
     font-size: 2em;
     top: 10em;
   }
+
+  h2 {
+    font-size: 1.5em;
+  }
   
   .recent-projects a {
     padding: 0 1em;
-  }
-
-  footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  #social_icon_footer a {
-    padding: 10px;
   }
 
   .contact-title {
     font-size: 2em;
     padding-top: 5em;
   }
+
+  
 }
