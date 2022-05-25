@@ -246,23 +246,17 @@ svg:hover {
 
 /* ----------Contact Form---------- */
 
-.contact-photo {
-  margin: auto;
-  border-radius: 50%;
-  transform: rotate(-20deg);
-  opacity: 0.8;
-  height: 15em;
-  position: relative;
-  bottom: -10em;
-  left: 16em;
-  z-index: -1;
+.contact-background {
+  background: url(./images/contact-background.png) no-repeat right, #4c4c4c;
+  background-size: auto; 
+  background-size: 60%;
 }
 
 .contact-title {
   margin: auto;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: left;
+  justify-content: left;
   font-size: 4em;
   text-align: center;
   width: 60%;
@@ -448,5 +442,9 @@ textarea {
     padding-top: 5em;
   }
 
-  
+  .contact-background {
+    background-size: 110%;
+  }
+
+
 }
