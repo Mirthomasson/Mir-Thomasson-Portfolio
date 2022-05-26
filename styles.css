@@ -7,7 +7,6 @@ html {
 
 body {
     box-sizing: border-box;
-    background-color: darkslategrey;
     color: seashell;
     font-family: 'Montserrat', sans-serif;
     margin: 0;
@@ -19,23 +18,8 @@ body {
 
 
 
-/* ---------- Banner ---------- */
 
-.banner {
-    background: linear-gradient(to bottom, rgba(47, 79, 79, 0) 40%,
-    rgb(47, 79, 79)), url("./images/blue-ridge-banner.jpeg");
-    background-size: cover;
-    background-position: bottom;
-    background-repeat: no-repeat;
-    /* background-attachment: fixed; */
-    height: 60em;
-    width: auto;
-    position: relative;
-}
-
-
-
-/* ---------- Nav Hamburger ---------- */
+/* ---------- Nav Mountain ---------- */
 
 .dropbtn {
     background-color: transparent;
@@ -49,7 +33,6 @@ body {
   }
   
   .dropdown {
-    background-color: rgba(47, 79, 79, 0.844);
     position: fixed;
     z-index: 1;
     width: 100%;
@@ -94,18 +77,54 @@ body {
       transition: opacity 1s;
     }
 
+/* ----------Home---------- */
+
+.home-page {
+  background-color: rgba(47, 79, 79, 0.9);
+  margin: auto;
+}
+
+
 
 /* ----------Titles---------- */
 
 h1 {
     text-align: center;
-    font-size: 4em;
-    width: 75%;
+    font-size: 2.5em;
     position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
+    right: 18em;
+    top: 9em;
+}
+
+.stage {
+  display: flex;
+}
+
+.down-arrow {
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  font-size: 4em;
+  position: relative;
+  bottom: -8em;
+  left: 11.5em;
+}
+
+.bounce-2 {
+  animation-name: bounce-2;
+  animation-timing-function: ease;
+}
+
+@keyframes bounce-2 {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-50px); }
+  100% { transform: translateY(0); }
+}
+
+
+.mountain-climbers {
+  position: relative;
+  left: 25em;
+  bottom: -10em;
 }
 
 
@@ -192,13 +211,20 @@ svg:hover {
 
 /* ----------Footer---------- */
 
-#social_icon_footer {
+.footer-background {
   text-align: center;
-  padding: 130px 50px;
   background-image: url("./images/footer-1.png");
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: relative;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 400px;
+}
+
+#social_icon_footer {
+  margin: 2em;
+  bottom: -15em;
 }
 
 #social_icon_footer a {
@@ -206,7 +232,6 @@ svg:hover {
   position: relative;
   color: lightyellow;
   padding: 12px;
-  bottom: -3em;
 }
 
 #social_icon_footer .social:hover {
@@ -223,9 +248,6 @@ svg:hover {
   -moz-transition-duration: 0.5s;
   -o-transition-duration: 0.5s;
 }
-/*
-    Multicoloured Hover Variations
-*/
 
 #social_icon_footer #social-gh:hover {
   color: #000000;
@@ -325,6 +347,31 @@ textarea {
 
 /* ----------About Me---------- */
 
+.snap-container {
+  font-family: sans-serif;
+  scroll-snap-type: mandatory;
+  scroll-snap-points-y: repeat(100vh);
+  scroll-snap-type: y mandatory;
+}
+section {
+  border-bottom: 1px solid white;
+  padding: 1rem;
+  height: 100vh;
+  scroll-snap-align: start;
+  text-align: center;
+  position: relative;
+}
+
+.section-title {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  color: white;
+  width: 100%;
+  left: 0;
+  font-size: calc(1rem + 3vw);
+}
 
 /* ----------Mobile View---------- */
 
