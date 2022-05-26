@@ -1,18 +1,21 @@
 /* ---------- Universal ---------- */
 html {
+  box-sizing: border-box;
   scroll-snap-type: mandatory;
   scroll-snap-points-y: repeat(100vh);
   scroll-snap-type: y mandatory;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    box-sizing: border-box;
-    color: darkslategray;
-    font-family: 'Montserrat', sans-serif;
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    overflow-x: hidden;
+  color: darkslategray;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
 }
 
 section {
@@ -62,6 +65,7 @@ h1 {
 .stage img:hover {
   transform: rotate(-15deg);
   transition: transform .5s;
+  cursor: pointer;
 }
 
 .down-arrow {
@@ -192,6 +196,7 @@ h1 {
 }
 
 /* ----------section-5---------- */
+
 #stars {
  
 }
@@ -259,6 +264,6 @@ footer {
 
 /* ----------Mobile View---------- */
 
-@media screen and (max-width: 375) {
+@media screen and (min-width: 600px) {
 
 }
