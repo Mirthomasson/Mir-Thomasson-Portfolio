@@ -17,66 +17,6 @@ body {
 }
 
 
-
-
-/* ---------- Nav Mountain ---------- */
-
-.dropbtn {
-    background-color: transparent;
-    border: none;
-    font-size: 25px;
-    cursor: pointer;
-    float: right;
-    opacity: 0.7;
-    transition: opacity 1s;
-    margin: .1em 1em;
-  }
-  
-  .dropdown {
-    position: fixed;
-    z-index: 1;
-    width: 100%;
-  }
-  
-  .dropdown-content {
-    visibility: hidden;
-    opacity: 0;
-    transition: visibility 1s, opacity 0.5s;
-    position: absolute;
-    top: 4.5em;
-    right: 16px;
-    background-color: seashell;
-    min-width: 80px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    text-align: center;
-    border-radius: .5em;
-  }
-  
-  .dropdown-content a {
-    color: black;
-    padding: 10px 10px;
-    text-decoration: none;
-    display: block;
-    font-size: 1.5em;
-  }
-  
-  .dropdown-content a:hover {
-      background-color: lightblue;
-      transition: background-color .5s;
-    }
-
-  .dropdown:hover .dropdown-content {
-    visibility: visible;
-    opacity: 0.8;
-    transition: visibility 1s linear .5s;
-    }
-
-  .dropdown:hover .dropbtn {
-      opacity: 1;
-      transition: opacity 1s;
-    }
-
 /* ----------Home---------- */
 
 .home-page {
@@ -84,29 +24,26 @@ body {
   margin: auto;
 }
 
-
-
-/* ----------Titles---------- */
-
 h1 {
     text-align: center;
     font-size: 2.5em;
     position: absolute;
-    right: 18em;
-    top: 9em;
+
 }
 
 .stage {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 15em;
 }
 
 .down-arrow {
   animation-duration: 2s;
   animation-iteration-count: infinite;
   font-size: 4em;
-  position: relative;
-  bottom: -8em;
-  left: 11.5em;
+  margin-top: 4em;
 }
 
 .bounce-2 {
@@ -119,14 +56,6 @@ h1 {
   50%  { transform: translateY(-50px); }
   100% { transform: translateY(0); }
 }
-
-
-.mountain-climbers {
-  position: relative;
-  left: 25em;
-  bottom: -10em;
-}
-
 
 h2 {
     text-align: center;
@@ -151,62 +80,6 @@ h2 {
       opacity: 0.5;
   }
 }
-
-/* ----------Featured Projects & Skills---------- */
-
-.recent-projects {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.recent-projects a {
-  font-size: 2em;
-  text-align: center;
-  color: whitesmoke;
-  text-decoration: none;
-  transition: transform 1s, color 1s;
-}
-
-.recent-projects a:hover {
-  color: lightsalmon;
-  transform: scale(1.3);
-  opacity: 1;
-  transition: transform 1s, color 1s;
-  cursor: pointer;
-}
-
-.skills {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 8em auto;
-}
-
-.text {
-  text-align: center;
-  margin-top: -2em;
-  font-size: 1.5em;
-}
-
-.skillbox {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-svg {
-  height: 20em;
-  width: 20em;
-  padding: 4em;
-  transition: transform 250ms;
-}
-
-svg:hover {
-  transform: translateY(-10px);
-}
-
 
 
 /* ----------Footer---------- */
@@ -375,109 +248,3 @@ section {
 
 /* ----------Mobile View---------- */
 
-@media screen and (max-width: 1400px) {
-    h1 {
-      font-size: 4em;
-      top: 8em;
-    }
-
-    .skills {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding: 4em;
-    }
-
-    .contact-title {
-      font-size: 3em;
-      padding-top: 5em;
-    }
-}
-
-@media only screen and (max-width: 965px) {
-  h1 {
-    font-size: 4em;
-    top: 8em;
-  }
-
-  h2 {
-    font-size: 3.5em;
-  }
-
-  .contact-title {
-    font-size: 4em;
-    padding-top: 3em;
-  }
-}
-
-@media screen and (max-width: 645px) {
-   h1 {
-    font-size: 3em;
-    top: 9em;
-  }
-
-  h2 {
-    font-size: 3em;
-  }
-
-  .recent-projects a {
-    padding: 0 1em;
-  }
-
-  .contact-title {
-    font-size: 3em;
-    padding-top: 3em;
-  }
-}
-
-@media screen and (max-width: 495px) {
-
-  h1 {
-    font-size: 2em;
-    top: 10em;
-  }
-
-  h2 {
-    font-size: 2em;
-  }
-
-  .banner {
-    height: 40em;
-  }
-
-  .recent-projects a {
-    padding: 0 1em;
-  }
-
-  .contact-title {
-    font-size: 2.5em;
-    padding-top: 4em;
-  }
-}
-
-@media screen and (max-width: 375px) { 
-  h1 {
-    font-size: 2em;
-    top: 10em;
-  }
-
-  h2 {
-    font-size: 1.5em;
-  }
-  
-  .recent-projects a {
-    padding: 0 1em;
-  }
-
-  .contact-title {
-    font-size: 2em;
-    padding-top: 5em;
-  }
-
-  .contact-background {
-    background-size: 110%;
-  }
-
-
-}
