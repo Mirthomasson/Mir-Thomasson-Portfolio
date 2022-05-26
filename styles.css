@@ -187,8 +187,13 @@ h1 {
 
 /* ----------section-5---------- */
 #fifth {
-  background: linear-gradient(to bottom, #23565F, #1C4650);
+  background: linear-gradient(to bottom, #23565F, #1c4650, #060e1b);
   width: 100%;
+}
+
+/* ----------section-5---------- */
+#stars {
+ 
 }
 
 /* ----------Footer---------- */
@@ -216,7 +221,7 @@ footer {
 
 #social_icon_footer a {
   position: relative;
-  color: seashell;
+  color: #E7F0EB;
   padding: 12px;
 }
 
