@@ -3,21 +3,21 @@ html {
   scroll-snap-type: mandatory;
   scroll-snap-points-y: repeat(100vh);
   scroll-snap-type: y mandatory;
-  overflow-x: hidden;
 }
 
 body {
     box-sizing: border-box;
-    background-color: rgba(47, 79, 79, 0.9);
-    color: seashell;
+    color: darkslategray;
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
     height: 100%;
+    overflow-x: hidden;
 }
 
 section {
   height: 100vh;
+  width: 100%;
   scroll-snap-align: start;
   text-align: center;
   position: relative;
@@ -32,6 +32,10 @@ section {
   justify-content: center;
   min-height: 100%;
   position: relative;
+}
+
+#first {
+  background-color: #E7F0EB;
 }
 
 h1 {
@@ -66,7 +70,7 @@ h1 {
   font-size: 4em;
   cursor: pointer;
   text-decoration: none;
-  color: seashell;
+  color: darkslategray;
 }
 
 .down-arrow:hover {
@@ -92,6 +96,8 @@ h1 {
   align-items: center;
   justify-content: center;
   font-family: 'Codystar', cursive;
+  background: linear-gradient(to bottom, #E7F0EB, #CFE1D7);
+  width: 100%;
 }
 
 #second {
@@ -118,7 +124,6 @@ h1 {
 }
 
 #second-2 {
-  padding-bottom: 800px;
   display: flex;
   flex-wrap: wrap;
   align-items: top;
@@ -143,6 +148,11 @@ h1 {
 
 
 /* ----------section-3---------- */
+
+#third {
+  background: linear-gradient(to bottom, #CFE1D7, #57B6B2);
+  width: 100%;
+}
 
 #third h1 {
   margin-top: 4em;
@@ -169,7 +179,17 @@ h1 {
   cursor: pointer;
 }
 
+/* ----------section-4---------- */
+#fourth {
+  background: linear-gradient(to bottom, #57B6B2, #23565F);
+  width: 100%;
+}
 
+/* ----------section-5---------- */
+#fifth {
+  background: linear-gradient(to bottom, #23565F, #1C4650);
+  width: 100%;
+}
 
 /* ----------Footer---------- */
 
@@ -188,15 +208,15 @@ footer {
 }
 
 #social_icon_footer {
-  margin: 2em;
-  bottom: -11em;
-  position: relative;
+  display: flex;
+  justify-content: end;
+  left: -3em;
+  bottom: -13em;
 }
 
 #social_icon_footer a {
-  float: right;
   position: relative;
-  color: lightyellow;
+  color: seashell;
   padding: 12px;
 }
 
@@ -234,4 +254,6 @@ footer {
 
 /* ----------Mobile View---------- */
 
-@media screen only and (max-width:)
+@media screen and (max-width: 375) {
+
+}
