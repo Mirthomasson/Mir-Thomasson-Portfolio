@@ -327,13 +327,18 @@ footer {
     scroll-behavior: smooth;
   }
   
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
   #first {
     height: 150vh;
   }
 
   #myImage {
-    height: 14em;
+    height: 13em;
     left: -3.5em;
     position: relative;
   }
@@ -341,14 +346,14 @@ footer {
   .arrow-img {
     height: 6em;
     bottom: 4em;
-    right: 12em;
+    right: 11em;
   }
 
   .stage h1 {
     position: relative;
-    left: -2.5em;
-    top: -2em;
-    font-size: 1.4em;
+    left: -3em;
+    top: -2.75em;
+    font-size: 1.2em;
     width: 15em;
   }
 
@@ -405,16 +410,20 @@ footer {
 
 
   .footer-background {
-    height: 200px;
+    height: 150px;
   }
 
   #social_icon_footer {
-    left: -4em;
-    bottom: -7em;
+    left: -2em;
+    bottom: -5.5em;
   }
 
   #social_icon_footer .social {
-    -webkit-transform: scale(1.1)
+    -webkit-transform: scale(.8)
+  }
+
+  #social_icon_footer a {
+    margin: -.5em;
   }
  
   @media only screen and (max-width: 414px)  {
