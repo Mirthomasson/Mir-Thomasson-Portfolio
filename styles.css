@@ -363,7 +363,8 @@ footer {
   }
 
   #project-container img {
-    height: 10em;
+    width: 14em;
+    height: auto;
   }
 
   #third {
