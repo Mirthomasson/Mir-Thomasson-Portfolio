@@ -320,7 +320,7 @@ footer {
 
 /* ----------Mobile View---------- */
 
-@media screen and (max-width: 375px) {
+@media only screen and (max-width: 375px)  {
  
   .section {
     height: 150vh;
@@ -378,8 +378,12 @@ footer {
     flex-direction: column;
   }
 
+  .about p {
+    width: 18em
+  }
+
   #fifth h1 {
-    font-size: 2em;
+    font-size: 1.5em;
     width: 10em;
     position: relative;
     left: -4.25em;
@@ -389,9 +393,6 @@ footer {
     height: 60em;
   }
 
-  .about p {
-    width: 18em
-  }
 
   .footer-background {
     height: 200px;
@@ -402,3 +403,6 @@ footer {
     bottom: -7em;
   }
  
+  @media only screen and (max-width: 768px)  {
+    
+  }
