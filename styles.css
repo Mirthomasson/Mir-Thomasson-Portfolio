@@ -3,28 +3,22 @@ html {
   box-sizing: border-box;
   scroll-snap-type: mandatory;
   scroll-snap-type: y mandatory;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
 }
 
 body {
   font-family: 'Montserrat', sans-serif;
   margin: 0;
   padding: 0;
-  height: 100%;
-  width: 100%;
 }
 
 section {
-  height: 100vh;
-  width: 100%;
   scroll-snap-align: start;
   text-align: center;
   position: relative;
   margin: 0;
-  padding: 0;
+  padding: 2em;
+  overflow: hidden;
+  height: 100vh;
 }
 
 /* ----------section-1---------- */
@@ -117,7 +111,6 @@ h1 {
 
 #second {
   display: flex;
-  flex-wrap: wrap;
   align-items: top;
   justify-content: center;
   gap: 2em;
@@ -140,7 +133,6 @@ h1 {
 
 #second-2 {
   display: flex;
-  flex-wrap: wrap;
   align-items: top;
   justify-content: center;
   gap: 2em;
@@ -167,24 +159,19 @@ h1 {
 #third {
   background: linear-gradient(to bottom, #CFE1D7, #57B6B2);
   width: 100%;
-}
-
-#third h1 {
-  margin-top: 4em;
+  padding: 12em 0;
 }
 
 .skills-container {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 10em;
+  gap: 12em;
 }
 
 .skills-container svg {
   height: 18em;
-  width: 100%;
 }
 
 .skills-container svg:hover {
@@ -196,7 +183,8 @@ h1 {
 /* ----------section-4---------- */
 #fourth {
   background: linear-gradient(to bottom, #57B6B2, #23565F);
-  width: 100%;
+  padding-top: 12em;
+  padding-bottom: 25em;
 }
 
 #fourth h1 {
@@ -226,12 +214,14 @@ h1 {
 
 .about p {
   width: 20em;
+  height: 18em;
   background-color: #E7F0EB;
   border-radius: .5em;
   box-shadow: inset 0 0 0 0 #23565F, rgba(0, 0, 0, 0.35) 0px 5px 15px;
   padding: 1em;
-  line-height: 2em;
+  line-height: 1.8em;
   transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+  font-size: 1em;
 }
 
 .about p:hover {
@@ -243,12 +233,13 @@ h1 {
 
 #fifth {
   background: linear-gradient(to bottom, #23565F, #1c4650);
-  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #fifth h1 {
   color: #E7F0EB;
-  margin: 7em 5em;
 
 }
 
@@ -273,11 +264,11 @@ footer {
   display: flex;
   justify-content: end;
   left: -3em;
-  bottom: -13em;
+  bottom: -10em;
+  position: relative;
 }
 
 #social_icon_footer a {
-  position: relative;
   color: #E7F0EB;
   padding: 12px;
 }
@@ -316,49 +307,39 @@ footer {
 
 /* ----------Mobile View---------- */
 
-@media only screen and (max-width: 375px) and (max-width: 767px)   {
+@media only screen and (min-width: 375px) and (max-width: 767px)   {
  
   html {
     scroll-snap-type: none;
     scroll-behavior: smooth;
   }
-  
-  .container {
+
+  #first {
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
   }
 
-  #first {
-    height: 100vh;
-  }
-
   #myImage {
     height: 13em;
-    left: -3.5em;
-    top: -1.5em;
-    position: relative;
   }
 
   .arrow-img {
-    height: 6em;
-    bottom: 6em;
-    right: 11em;
+    height: 5em;
+    bottom: 4em;
+    right: 7.6em;
   }
 
   .stage h1 {
-    position: relative;
-    left: -3em;
-    top: -4em;
     font-size: 1.2em;
     width: 15em;
+    margin-top: -2.5em;
   }
 
   .down-arrow {
-    position: relative;
-    left: -1.1em;
-    top: -1.2em;
-    font-size: 3em;
+    font-size: 2em;
+    margin: 1em;
   }
 
   #project-container h1 {
@@ -371,20 +352,18 @@ footer {
   }
 
   #second {
-    height: 100vh;
+    flex-direction: column;
   }
 
-  #third {
-    height: 250vh;
-  }
+.skills-container {
+  flex-direction: column;
+  gap: 2em;
+  padding: 1em;
+}
 
   .skills-container svg {
-    height: 12em;
+    height: 10em;
   }  
-  
-  #fourth {
-    height: 200vh;
-  }
 
   #fourth img {
     width: 20em;
@@ -400,24 +379,16 @@ footer {
   }
 
   #fifth h1 {
-    font-size: 1.5em;
-    width: 13em;
-    position: relative;
-    left: -3.75em;
+    font-size: 1em;
   }
-
-  #fifth {
-    height: 50em;
-  }
-
 
   .footer-background {
     height: 150px;
   }
 
   #social_icon_footer {
-    left: -2em;
-    bottom: -5.5em;
+    left: 1em;
+    bottom: -3.5em;
   }
 
   #social_icon_footer .social {
@@ -429,8 +400,8 @@ footer {
   }
  
   @media only screen and (max-width: 414px)  {
-/*   
-    #container {
+  
+    /* #container {
     width: 58vh;
    }
 
@@ -444,7 +415,7 @@ footer {
     height: 2em;
     bottom: 10em;
     right: 12em;
-  } */
-  
+  }
+   */
       
   }
