@@ -322,7 +322,12 @@ footer {
 
 @media only screen and (max-width: 375px)  {
  
-  .section {
+  html {
+    scroll-snap-type: none;
+    scroll-behavior: smooth;
+  }
+
+  #first {
     height: 150vh;
   }
 
@@ -360,7 +365,7 @@ footer {
   }
 
   #third {
-    height: 200vh;
+    height: 250vh;
   }
 
   .skills-container svg {
@@ -403,13 +408,13 @@ footer {
     left: -4em;
     bottom: -7em;
   }
+
+  #social_icon_footer .social {
+    -webkit-transform: scale(1.1)
+  }
  
   @media only screen and (max-width: 768px)  {
    
-    .section {
-      height: 150vh;
-    }
-
     .about {
       flex-direction: column;
       height: 20vh
