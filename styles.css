@@ -345,14 +345,16 @@ footer {
 
   .stage h1 {
     position: relative;
-    left: -1.95em;
-    font-size: 1.75em;
-    width: 11.75em;
+    left: -2.5em;
+    top: -2em;
+    font-size: 1.4em;
+    width: 15em;
   }
 
   .down-arrow {
     position: relative;
     left: -1.1em;
+    top: -.75em;
     font-size: 3em;
   }
 
