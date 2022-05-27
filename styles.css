@@ -334,7 +334,7 @@ footer {
   }
 
   #first {
-    height: 150vh;
+    height: 100vh;
   }
 
   #myImage {
@@ -369,8 +369,12 @@ footer {
   }
 
   #project-container img {
-    width: 12em;
+    width: 14em;
     height: auto;
+  }
+
+  #second {
+    height: 100vh;
   }
 
   #third {
@@ -378,15 +382,16 @@ footer {
   }
 
   .skills-container svg {
-    height: 10em;
+    height: 12em;
   }  
   
   #fourth {
-    height: 120vh;
+    height: 200vh;
   }
 
   #fourth img {
-    height: 15em;
+    width: 20em;
+    height: auto;
   }
 
   .about {
