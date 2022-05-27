@@ -320,19 +320,20 @@ footer {
 
 /* ----------Mobile View---------- */
 
-@media only screen and (max-width: 375px)  {
+@media only screen and (max-width: 375px) and (max-width: 767px)   {
  
   html {
     scroll-snap-type: none;
     scroll-behavior: smooth;
   }
+  
 
   #first {
     height: 150vh;
   }
 
   #myImage {
-    height: 15em;
+    height: 14em;
     left: -3.5em;
     position: relative;
   }
@@ -363,7 +364,7 @@ footer {
   }
 
   #project-container img {
-    width: 14em;
+    width: 12em;
     height: auto;
   }
 
@@ -416,10 +417,23 @@ footer {
     -webkit-transform: scale(1.1)
   }
  
-  @media only screen and (max-width: 768px)  {
-   
-    .about {
-      flex-direction: column;
-      height: 20vh
-    }
+  @media only screen and (max-width: 414px)  {
+/*   
+    #container {
+    width: 58vh;
+   }
+
+   #myImage {
+    height: 18em;
+    left: -3.5em;
+    position: relative;
+  }
+
+   .arrow-img {
+    height: 2em;
+    bottom: 10em;
+    right: 12em;
+  } */
+  
+      
   }
