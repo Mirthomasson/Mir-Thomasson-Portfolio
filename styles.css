@@ -404,5 +404,9 @@ footer {
   }
  
   @media only screen and (max-width: 768px)  {
-    
+   
+    .about {
+      flex-direction: column;
+      height: 20vh
+    }
   }
