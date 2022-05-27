@@ -342,12 +342,13 @@ footer {
     position: relative;
     left: -1.95em;
     font-size: 1.75em;
-    width: 12em;
+    width: 11.75em;
   }
 
   .down-arrow {
     position: relative;
-    left: -.85em;
+    left: -1.1em;
+    font-size: 3em;
   }
 
   #project-container h1 {
@@ -359,7 +360,7 @@ footer {
   }
 
   #third {
-    height: 150vh;
+    height: 200vh;
   }
 
   .skills-container svg {
@@ -384,13 +385,13 @@ footer {
 
   #fifth h1 {
     font-size: 1.5em;
-    width: 10em;
+    width: 13em;
     position: relative;
-    left: -4.25em;
+    left: -3.75em;
   }
 
   #fifth {
-    height: 60em;
+    height: 50em;
   }
 
 
@@ -405,6 +406,10 @@ footer {
  
   @media only screen and (max-width: 768px)  {
    
+    .section {
+      height: 150vh;
+    }
+
     .about {
       flex-direction: column;
       height: 20vh
