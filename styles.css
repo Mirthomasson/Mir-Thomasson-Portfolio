@@ -336,16 +336,20 @@ footer {
     margin: 1em;
   }
 
+
   #project-container h1 {
     font-size: 2em;
+    margin-bottom: 1.5em;
   }
 
   #project-container img {
     width: 14em;
     height: auto;
+    margin: 1.4em auto;
   }
 
   #second {
+    height: 150vh;
     flex-direction: column;
   }
 
@@ -436,6 +440,7 @@ footer {
 
   #second {
     flex-direction: column;
+    height: 200vh;
   }
 
   #second img {
