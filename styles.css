@@ -1,8 +1,8 @@
 /* ---------- Universal ---------- */
 html {
   box-sizing: border-box;
-  scroll-snap-type: mandatory;
-  scroll-snap-type: y mandatory;
+  scroll-snap-type: proximity;
+  scroll-snap-type: y proximity;
 }
 
 body {
@@ -99,16 +99,25 @@ section {
   display: flex;
   justify-content: center;
   gap: 2em;
-  padding: 14em 0;
+  padding-top: 14em;
   margin-top: -12em;
 }
 
+#second a {
+  text-decoration: none;
+  text-align: center;
+}
+
 #second img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 18em;
-  width: 100%;
+  width: auto;
   border-radius: .75em;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   transition: transform .5s;
+  margin-bottom: 1.5em;
 }
 
 #second img:hover {
@@ -143,7 +152,7 @@ section {
 #third {
   background: linear-gradient(to bottom, #CFE1D7, #57B6B2);
   width: 100%;
-  padding: 12em 0;
+  padding: 10em 0;
 }
 
 .skills-container {
@@ -488,7 +497,7 @@ footer {
     }
 
     #fifth h1 {
-      font-size: 2.8em;
+      font-size: 2.5em;
     }
 
     .footer-background {
