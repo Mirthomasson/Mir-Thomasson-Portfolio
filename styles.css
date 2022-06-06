@@ -329,7 +329,7 @@ footer {
 
   #project-container h1 {
     font-size: 2em;
-    margin-bottom: -8.5em;
+    margin-bottom: -5em;
   }
 
   #project-container img {
@@ -341,6 +341,10 @@ footer {
   #second {
     height: 175vh;
     flex-direction: column;
+  }
+
+  #third {
+    height: 150vh;
   }
 
   #third h1 {
@@ -437,9 +441,6 @@ footer {
     width: 25em;
   }
 
-  #third {
-    margin-left: -2em;
-  }
 
   .skills-container {
     flex-direction: column;
