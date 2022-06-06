@@ -90,7 +90,6 @@ section {
   align-items: center;
   justify-content: center;
   background: linear-gradient(to bottom, #E7F0EB, #CFE1D7);
-  width: 100%;
 }
 
 #second {
@@ -147,7 +146,6 @@ section {
 
 #third {
   background: linear-gradient(to bottom, #CFE1D7, #57B6B2);
-  width: 100%;
 }
 
 .skills-container {
@@ -343,10 +341,6 @@ footer {
   #second {
     height: 175vh;
     flex-direction: column;
-  }
-
-  #third {
-    left: -2.5em;
   }
 
   #third h1 {
