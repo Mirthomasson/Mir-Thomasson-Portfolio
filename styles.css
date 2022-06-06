@@ -341,12 +341,12 @@ footer {
   }
 
   #second {
-    height: 150vh;
+    height: 175vh;
     flex-direction: column;
   }
 
   #third {
-    left: -2em;
+    left: -2.5em;
   }
 
   #third h1 {
