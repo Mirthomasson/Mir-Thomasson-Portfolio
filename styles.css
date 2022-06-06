@@ -297,8 +297,7 @@ footer {
 @media only screen and (min-width: 375px) and (max-width: 767px)   {
  
   html {
-    scroll-snap-type: none;
-    scroll-behavior: smooth;
+    overflow-x: hidden;
   }
 
   #first {
@@ -325,14 +324,14 @@ footer {
   }
 
   .down-arrow {
-    font-size: 2em;
+    font-size: 2.5em;
     margin: 1em;
   }
 
 
   #project-container h1 {
     font-size: 2em;
-    margin-bottom: -1.5em;
+    margin-bottom: -8.5em;
   }
 
   #project-container img {
@@ -346,15 +345,26 @@ footer {
     flex-direction: column;
   }
 
+  #third {
+    left: -2em;
+  }
+
+  #third h1 {
+    padding-bottom: 1.5em;
+  }
+
   .skills-container {
     flex-direction: column;
     gap: 2em;
-    padding: 1em;
   }
 
   .skills-container svg {
     height: 10em;
   }  
+
+  #fourth {
+    height: 175vh;
+  }
 
   #fourth img {
     width: 20em;
@@ -365,9 +375,6 @@ footer {
     flex-direction: column;
   }
 
-  .about p {
-    width: 18em
-  }
 
   #fifth h1 {
     font-size: 1.8em;
@@ -393,11 +400,9 @@ footer {
  
 
 @media only screen and (min-width: 767px) and (max-width: 1200px)   {
-    
    
   html {
-    scroll-snap-type: none;
-    scroll-behavior: smooth;
+    overflow-x: hidden;
   }
 
   #first {
@@ -427,13 +432,10 @@ footer {
     margin: 1em;
   }
 
-  #project-container h1 {
-    margin-bottom: 2em;
-  }
-
   #second {
     flex-direction: column;
-    height: 200vh;
+    height: 150vh;
+    gap: 4em;
   }
 
   #second img {
@@ -441,15 +443,22 @@ footer {
     width: 25em;
   }
 
+  #third {
+    margin-left: -2em;
+  }
+
   .skills-container {
     flex-direction: column;
     gap: 2em;
-    padding: 1em;
   }
 
   .skills-container svg {
     height: 12em;
   }  
+
+  #fourth {
+    height: 175vh;
+  }
 
   .about {
     flex-direction: column;
@@ -478,6 +487,9 @@ footer {
   }
 
   @media only screen and (min-width: 1200px) and (max-width: 1400px)   {
+    html {
+      overflow-x: hidden;
+    }
 
     #myImage {
       height: 16em;
@@ -513,5 +525,12 @@ footer {
 
     #social_icon_footer a {
       margin: -.2em;
+    }
+  }
+
+
+  @media only screen and (min-width: 1400px) and (max-width: 2000px)   {
+    html {
+      overflow-x: hidden;
     }
   }
