@@ -1,8 +1,6 @@
 /* ---------- Universal ---------- */
 html {
   box-sizing: border-box;
-  scroll-snap-type: proximity;
-  scroll-snap-type: y proximity;
 }
 
 body {
@@ -99,8 +97,6 @@ section {
   display: flex;
   justify-content: center;
   gap: 2em;
-  padding-top: 14em;
-  margin-top: -12em;
 }
 
 #second a {
@@ -152,7 +148,6 @@ section {
 #third {
   background: linear-gradient(to bottom, #CFE1D7, #57B6B2);
   width: 100%;
-  padding: 10em 0;
 }
 
 .skills-container {
@@ -176,8 +171,6 @@ section {
 /* ----------section-4---------- */
 #fourth {
   background: linear-gradient(to bottom, #57B6B2, #23565F);
-  padding-top: 12em;
-  padding-bottom: 25em;
 }
 
 #fourth h1 {
