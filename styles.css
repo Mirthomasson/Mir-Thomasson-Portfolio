@@ -163,7 +163,7 @@ section {
 .skills-container svg:hover {
   animation: bounce;
   animation-duration: 1s;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 /* ----------section-4---------- */
