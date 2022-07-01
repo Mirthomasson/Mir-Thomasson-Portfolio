@@ -535,3 +535,85 @@ footer {
       overflow-x: hidden;
     }
   }
+
+  @media only screen and (max-width: 667px) and (orientation: landscape) {
+    #first {
+    padding-top: 2.5em;
+    }
+
+    #myImage {
+      height: 8em;
+    }
+  
+    .arrow-img {
+      height: 3em;
+      bottom: 2.5em;
+      right: 5em;
+    }
+  
+    .stage h1 {
+      font-size: .8em;
+      width: 15em;
+      margin-top: -2.5em;
+    }
+
+    .down-arrow {
+      font-size: 1.2em;
+      bottom: -1em;
+    }
+
+    #project-container h1 {
+      font-size: 1.2em;
+      padding: 3em;
+    }
+  
+    #project-container img {
+      width: 10em;
+    }
+  
+    #second {
+      font-size: 1em;
+    }
+  
+    #third {
+      padding-bottom: 12em;
+    }
+  
+    #third h1 {
+      font-size: 1.2em;
+      padding-bottom: 1.5em;
+    }
+
+    #fourth {
+      padding-bottom: 24em;
+    }
+  
+    #fourth img {
+      width: 19em;
+    }
+  
+  
+    #fifth h1 {
+      font-size: 1.2em;
+    }
+  
+    .footer-background {
+      height: 110px;
+    }
+  
+    #social_icon_footer {
+      left: 1em;
+      bottom: -1.8em;
+    }
+  
+    #social_icon_footer .social {
+      -webkit-transform: scale(.6)
+    }
+  
+    #social_icon_footer a {
+      margin: -.8em;
+    }
+  }
+
+
+  }
